@@ -27,7 +27,7 @@ public class Main {
 
 
 			if (countChange(map, change)) {
-				System.out.println(Math.addExact(map.get("5").intValue(),map.get("2").intValue()));
+				System.out.println(map.get("5")+map.get("2"));
 				break;
 			} else {
 				map.put("5",map.get("5")-1);
@@ -45,7 +45,7 @@ public class Main {
 		map.put("5", 0);
 		map.put("2", 0);
 		map.put("5", price / 5);
-		change = price - Integer.parseInt(String.valueOf(map.get("5"))) * 5;
+		change = price - (map.get("5")) * 5;
 		return price - ((map.get("5")) * 5);
 
 	}
