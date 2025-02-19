@@ -3,4 +3,3 @@ SELECT history_id , car_id , date_format(start_date,'%Y-%m-%d') start_date , dat
 from car_rental_company_rental_history
 where start_date like '2022-09%'
 order by history_id desc
-
